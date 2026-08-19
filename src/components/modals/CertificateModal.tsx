@@ -54,6 +54,13 @@ export const CertificateModal: React.FC = () => {
             <div className="absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-amber-500"></div>
             <div className="absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-amber-500"></div>
 
+            <div className="w-12 h-12 mx-auto mb-2 rounded-xl overflow-hidden shadow-sm border border-amber-200 bg-white p-0.5">
+              <img
+                src={brand.academyLogoUrl || '/logo.jpg'}
+                alt={brand.academyName}
+                className="w-full h-full object-cover"
+              />
+            </div>
             <p className="text-[10px] uppercase font-bold tracking-[0.25em] text-slate-500 mb-1">
               {brand.academyName}
             </p>

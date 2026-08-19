@@ -4,6 +4,7 @@ export const DEFAULT_BRAND_CONFIG: BrandConfig = {
   academyName: 'Learnova Academy',
   academyTagline: 'Excellence in Digital Learning & Tech Careers',
   academyLogoText: 'LEARNOVA',
+  academyLogoUrl: '/logo.jpg',
   studentName: 'Himanshu Kasoudhan',
   studentEmail: 'himanshu.k@example.com',
   studentId: 'LNA-2026-0142',

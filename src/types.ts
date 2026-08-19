@@ -20,6 +20,7 @@ export interface BrandConfig {
   academyName: string;
   academyTagline: string;
   academyLogoText: string;
+  academyLogoUrl?: string;
   studentName: string;
   studentEmail: string;
   studentId: string;

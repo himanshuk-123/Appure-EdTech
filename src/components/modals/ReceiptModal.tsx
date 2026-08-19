@@ -37,8 +37,14 @@ export const ReceiptModal: React.FC = () => {
         {/* Printable Receipt Paper */}
         <div className="p-5 space-y-4 bg-white dark:bg-slate-900 text-slate-900 dark:text-white" id="printable-receipt">
           <div className="text-center pb-3 border-b border-dashed border-slate-200 dark:border-slate-800">
+            <div className="w-10 h-10 mx-auto mb-1.5 rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700 bg-white p-0.5 shadow-sm">
+              <img
+                src={brand.academyLogoUrl || '/logo.jpg'}
+                alt={brand.academyName}
+                className="w-full h-full object-cover"
+              />
+            </div>
             <div className="flex items-center justify-center gap-1.5 text-blue-600 font-bold text-sm mb-0.5">
-              <Building2 className="w-4 h-4" />
               <span>{brand.academyName}</span>
             </div>
             <p className="text-[11px] text-slate-500">{brand.academyTagline}</p>
