@@ -1,0 +1,6 @@
+{
+  "name": "Learnova - Student Academy Portal",
+  "description": "A fully customizable student LMS and academy portal featuring dashboards, video learning, course roadmaps, schedule, attendance analytics, tests, certificates, digital ID, fee management, and white-label branding controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
