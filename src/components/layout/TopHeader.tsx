@@ -65,18 +65,6 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
             </div>
 
             <div className="flex items-center gap-1.5">
-              {/* Light/Dark mode quick toggle */}
-              <button
-                onClick={() => {
-                  setDarkMode((prev) => !prev);
-                  showToast(darkMode ? 'Switched to Light Mode ☀️' : 'Switched to Dark Mode 🌙');
-                }}
-                title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-                className="w-8 h-8 flex items-center justify-center rounded-full bg-white dark:bg-slate-800 text-amber-500 dark:text-amber-400 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors shadow-sm"
-              >
-                {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4 text-indigo-600" />}
-              </button>
-
               {/* White-label branding quick gear */}
               <button
                 onClick={() => setShowBrandingModal(true)}
@@ -151,16 +139,6 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
         </div>
 
         <div className="flex items-center gap-1.5 shrink-0 ml-2">
-          <button
-            onClick={() => {
-              setDarkMode((prev) => !prev);
-              showToast(darkMode ? 'Switched to Light Mode ☀️' : 'Switched to Dark Mode 🌙');
-            }}
-            title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-            className="w-8 h-8 flex items-center justify-center rounded-full text-amber-500 dark:text-amber-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-          >
-            {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4 text-indigo-600" />}
-          </button>
           {rightAction ? (
             rightAction
           ) : (

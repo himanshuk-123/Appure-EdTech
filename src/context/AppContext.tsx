@@ -93,14 +93,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     }
   });
 
-  const [darkMode, setDarkMode] = useState<boolean>(() => {
-    try {
-      const saved = localStorage.getItem('learnova_dark_mode');
-      return saved !== null ? JSON.parse(saved) : false;
-    } catch {
-      return false;
-    }
-  });
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
   // Navigation Stack
   const [screenStack, setScreenStack] = useState<ScreenId[]>(['home']);
@@ -287,11 +280,6 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     const root = document.documentElement;
     root.style.setProperty('--brand-primary', brand.primaryColor);
     root.style.setProperty('--brand-accent', brand.accentColor);
-    try {
-      localStorage.setItem('learnova_dark_mode', JSON.stringify(darkMode));
-    } catch (e) {
-      console.error(e);
-    }
     if (darkMode) {
       document.documentElement.classList.add('dark');
     } else {
